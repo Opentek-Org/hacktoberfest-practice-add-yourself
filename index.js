@@ -1,6 +1,6 @@
 const getData = async () => {
   const api =
-    "https://api.github.com/repos/Opentek-Org/add-yourself-hacktoberfest-practice/contributors";
+    "https://api.github.com/repos/Opentek-Org/hacktoberfest-practice-add-yourself/contributors";
   try {
     let data = await fetch(api);
     realData = await data.json();
