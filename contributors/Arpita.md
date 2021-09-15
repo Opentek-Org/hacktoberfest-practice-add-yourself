@@ -1,5 +1,6 @@
 ### Introduction
 Hello!I'm Arpita.I'm beginning with Open Source through this repository.
+You can connect with me on [Linkedin](https://www.linkedin.com/in/arpita-gupta-660a261ab/)
 ### Tech Stack
 MEAN Stack
 ### How did i discover Open Source
