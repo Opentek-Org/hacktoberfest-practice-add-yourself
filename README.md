@@ -34,7 +34,7 @@ Just add your **(yourname.md)** in the contributor folder and answer the followi
 2. Clone your forked copy of the project.
 
 ```bash
-git clone --depth 1 https://github.com/<your username>/hacktoberfest-practice-add-yourself.git
+git clone https://github.com/<your username>/hacktoberfest-practice-add-yourself.git
 ```
 
 3. Change the working directory
