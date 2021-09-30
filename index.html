@@ -19,6 +19,11 @@
 </head>
 
 <body>
+    <!-- <div class="discord-logo">
+        <div class="wrapper-buttons">
+          <button class="blue-button" onclick="window.location.href='https://discord.gg/9qyr4Mdc3Y'" >Join Discord</button>
+        </div>
+    </div> -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand me-2" href="#">
@@ -38,6 +43,9 @@
                     <a class="btn btn-dark px-3" style="margin-right: 10px;"
                         href="https://github.com/Opentek-Org/hacktoberfest-practice-add-yourself" target="_blank"
                         role="button"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-dark px-3" style="margin-right: 10px;background-color: #38b9ff;"
+                        href="https://twitter.com/opentekorg" target="_blank"
+                        role="button" ><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-dark px-3" href="https://www.linkedin.com/company/opentekorg/" target="_blank"
                         style="background-color: #0077b5;" role="button"><i class="fab fa-linkedin-in"></i></a>
                 </ul>
@@ -56,40 +64,59 @@
 
     <footer class="bg-light text-dark mt-5">
         <div class="container">
-            <div class="row text-center text-dark">
+            <div class="text-center">
+                <span class="copyright quick-links text-dark">Copyright &copy; Opentek
+                    <script>document.write(new Date().getFullYear())</script>
+                </span>
+                <br>
+                Open Sourced by <a style="text-decoration: none;" href="https://github.com/Opentek-Org"
+                target="_blank" rel="noopener noreferrer">Opentek</a>
+            </div>
+            <!-- <div class="row text-center text-dark">
                 <div class="col-md-4 box">
                     <span class="copyright quick-links text-dark">Copyright &copy; Opentek
                         <script>document.write(new Date().getFullYear())</script>
                     </span>
                 </div>
-                <!-- <div class="col-md-4 box">
-                    <ul class="list-inline social-buttons">
+                <div class="col-md-4 ">
+                    <ul class="list-inline ">
                         <li class="list-inline-item">
-                            <a href="https://github.com/Opentek-Org" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/company/opentekorg/" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
+                            <div class="discord-logo">
+                                <div class="wrapper-buttons">
+                                  <button class="blue-button" onclick="window.location.href='https://discord.gg/9qyr4Mdc3Y'" >Join Discord</button>
+                                </div>
+                            </div>
                         </li>
                     </ul>
-                </div> -->
+                </div>
                 <div class="col-md-4 box">
                     <ul class="list-inline quick-links">
-                        <li class="list-inline-item">
-                            <a style="text-decoration: none;" href="https://discord.gg/9qyr4Mdc3Y">Join Discord</a>
-                        </li>
+                        
                         <li class="list-inline-item">
                             Open Sourced by <a style="text-decoration: none;" href="https://github.com/Opentek-Org"
                                 target="_blank" rel="noopener noreferrer">Opentek</a>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </footer>
+    <div id="discord-shoutout" class="discord-shoutout">
+        <div class="shoutout-inner">
+          <img src="https://seeklogo.com/images/D/discord-color-logo-E5E6DFEF80-seeklogo.com.png">
+          <span class="title">Hey there!</span>
+          <p>
+            Fancy having a chat?
+          </p>
+          <p>
+            We're currently online on Discord!
+          </p>
+          <div class="discord-buttons">
+            <a class="discord-button discord-primary" href="https://discord.gg/9qyr4Mdc3Y" target="_blank">Join our server</a>
+            <button class="discord-button discord-secondary" onclick="hide()">Close</button>
+          </div>
+        </div>
+      </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
