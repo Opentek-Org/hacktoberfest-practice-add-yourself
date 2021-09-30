@@ -4,17 +4,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background: #000428; /* fallback for old browsers */
+  background: #080c11;
+  /* background: #000428; 
   background: -webkit-linear-gradient(
     to right,
     #aa80ff,
     #080C11
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #aa80ff,
     #080C11
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); */
 }
 
 
@@ -34,20 +35,21 @@ section {
   border-radius: 15px;
   margin: 0 auto;
   padding: 20px 10px;
-  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  /* box-shadow: 0 10px 15px rgba(0,0,0,0.3); */
   transition: .5s;
 }
 .card:hover {
   transform:scale(1.1);
 }
 .card_red, .card_red .title .fa {
-  background: linear-gradient(-45deg, #5e91ff, #eee6ed);
+  /* background: linear-gradient(-45deg, #5e91ff, #eee6ed); */
+  background: #4d79af;
 }
 .card_violet, .card_violet .title .fa  {
   background: linear-gradient(-45deg, #f1ecf1, #349aec);
 }
 .card_three, .card_three .title .fa  {
-  background: linear-gradient(-45deg, #3d2e92, #0014c5);
+  /* background: linear-gradient(-45deg, #3d2e92, #0014c5); */
 }
 
 .card:before {
@@ -220,4 +222,150 @@ footer .quick-links {
 .fa-ellipsis-h {
   color: white;
   padding: 2rem 0;
+}
+.discord-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+.wrapper-buttons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.wrapper-buttons > * {
+  margin-bottom: 10px;
+}
+
+
+.blue-button {
+  display: inline-block;
+  font-family: Whitney, "Open Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 11pt;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 45px;
+  width: 250px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blue-button {
+  background-color: #7289da;
+  border: 2px solid #7289da;
+  color: #fff;
+}
+
+
+.discord-shoutout * {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.discord-shoutout {
+  position: fixed;
+  bottom: 2em;
+  right: 1em;
+  width: 300px;
+  z-index: 100;
+  text-align: left;
+  transition: 1s ease;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(1em, 50px);
+  filter: drop-shadow(10px 8px 0px rgba(0, 0, 0, 0.15));
+}
+.discord-shoutout:hover {
+  filter: drop-shadow(10px 8px 0px rgba(0, 0, 0, 0.25));
+}
+.discord-shoutout.online {
+  opacity: 1;
+  transform: translate(0, 0);
+  visibility: visible;
+}
+.discord-shoutout:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 50px 0;
+  border-color: transparent #7289da transparent transparent;
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+}
+.discord-shoutout .shoutout-inner {
+  color: #fff;
+  padding: 1em 1.5em 1.5em;
+  transition: box-shadow 0.3s ease;
+  background: transparent;
+  border-radius: 1em/1em;
+  overflow: hidden;
+  position: relative;
+}
+.discord-shoutout .shoutout-inner:after, .discord-shoutout .shoutout-inner:before {
+  content: "";
+  border-width: 0;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #7289da;
+  z-index: -1;
+}
+.discord-shoutout .shoutout-inner:after {
+  height: 200%;
+  top: 0;
+  left: -46px;
+  transform: rotate(-18deg);
+}
+.discord-shoutout .shoutout-inner:before {
+  height: calc(100% - 25px);
+  right: 0;
+  top: 0;
+}
+.discord-shoutout .title {
+  display: block;
+  font-size: 1.2em;
+  margin: 0 0 1em 0;
+}
+.discord-shoutout p {
+  font-size: 0.9em;
+  font-weight: 300;
+  margin: 0 0 0.6em 0;
+}
+.discord-shoutout .discord-buttons {
+  margin-top: 1.4em;
+}
+.discord-shoutout .discord-button {
+  padding: 0.6em 1em;
+  color: white;
+  text-decoration: none;
+  background: transparent;
+  border: 0;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.discord-shoutout .discord-button.discord-primary {
+  border: 2px solid #fff;
+  border-radius: 6px;
+}
+.discord-shoutout .discord-button.discord-primary:hover {
+  background: #fff;
+  color: #7289da;
+}
+.discord-shoutout .discord-button.discord-secondary {
+  color: #fff;
+}
+.discord-shoutout .discord-button.discord-secondary:hover {
+  text-decoration: underline;
+}
+.discord-shoutout img {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  height: 1.4em;
 }
