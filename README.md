@@ -1,5 +1,5 @@
 # Add-Yourself-Hacktoberfest-Practice
-This repo is not included in the Hacktoberfest event, as it is for practice only
+
 
 We have [Opentek Website](https://github.com/Opentek-Org/opentek) project in the organisation you can contribute to.
 
