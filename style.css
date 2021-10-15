@@ -83,6 +83,18 @@ section {
   z-index: 2;
 }
 
+.social-media a{
+  opacity: 0.85;
+  border-radius: 4px;
+}
+.social-media a:hover{
+  opacity: 1;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
 
 .option {
   position: relative;
@@ -368,4 +380,20 @@ footer .quick-links {
   right: 1em;
   top: 1em;
   height: 1.4em;
+}
+
+footer{
+  background-color: #030327;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.foot{
+  text-decoration: none;
+}
+
+.foot:hover{
+  color: white;
+  text-decoration:underline;
+
 }
