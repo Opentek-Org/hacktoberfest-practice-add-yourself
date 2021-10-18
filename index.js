@@ -4,7 +4,7 @@ const getData = async () => {
   try {
     let data = await fetch(api);
     realData = await data.json();
-    // console.log(realData);
+    //console.log(realData);
     var html = '<div class="row">';
     for (i = 0; i < realData.length; i++) {
       if (i % 3 == 0 && i != 0) {
@@ -31,12 +31,9 @@ const getData = async () => {
 
 getData();
 function show() {
-  setTimeout(
-    function() {
-      document.getElementById('discord-shoutout').classList.add('online');
-    },
-    200
-  );
+  setTimeout(function () {
+    document.getElementById("discord-shoutout").classList.add("online");
+  }, 200);
 }
 
 function reset() {
@@ -45,7 +42,7 @@ function reset() {
 }
 
 function hide() {
-  document.getElementById('discord-shoutout').classList.remove('online');
+  document.getElementById("discord-shoutout").classList.remove("online");
 }
 
 show();
