@@ -17,7 +17,7 @@ Just add your **(yourname.md)** in the contributor folder and answer the followi
 - Introduce Yourself
 - Tech Stack you use
 - How did you discover Open Source?
- (as an example you can check **Anirudh.md**) or you can also contribute by doing any modifications in this Website.
+ (as an example you can check **[Anirudh.md](/contributors/Anirudh.md)**) or you can also contribute by doing any modifications in this Website.
 
 ### 👀 TLDR Steps
 
@@ -33,37 +33,37 @@ Just add your **(yourname.md)** in the contributor folder and answer the followi
 1. Fork this repository
 2. Clone your forked copy of the project.
 
-```bash
+```sh
 git clone https://github.com/<your username>/hacktoberfest-practice-add-yourself.git
 ```
 
 3. Change the working directory
 
-```bash
+```sh
 cd hacktoberfest-practice-add-yourself
 ```
 
 4. Add a reference to the original repository.
 
-```
+```sh
 git remote add upstream https://github.com/Opentek-Org/hacktoberfest-practice-add-yourself
 ```
 
 5. Check the remotes for this repository.
 
-```
+```sh
 git remote -v
 ```
 
 6. Always take a pull from the upstream repository to your main branch to keep it at par with the main project(updated repository).
 
-```
+```sh
 git pull upstream main
 ```
 
 7. Create a new branch.
 
-```
+```sh
 git checkout -b <your_branch_name>
 ```
 
@@ -77,19 +77,19 @@ git checkout -b <your_branch_name>
 
 9. Track your changes
 
-```
+```sh
 git add .
 ```
 
 10. Commit your changes .
 
-```
+```sh
 git commit -m "Relevant message"
 ```
 
 11. Push the committed changes in your feature branch to your remote repo.
 
-```
+```sh
 git push -u origin <your_branch_name>
 ```
 
